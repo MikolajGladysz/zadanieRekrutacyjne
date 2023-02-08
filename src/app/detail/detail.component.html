@@ -1,0 +1,13 @@
+<div class="con glass">
+  <div *ngIf="!showSpinner">
+    <div class="top">
+      <img [src]="country['flags']['svg']" alt="" class="flag" />
+      <h3>{{ country["cca2"] }}</h3>
+    </div>
+    <h4>{{ country["name"]["official"] }}</h4>
+    <p>Stolica: {{ country["capital"][0] }}</p>
+    <p>Waluta: {{ currency }}</p>
+    <p>Populacja: {{ populationFormatted }}</p>
+  </div>
+  <app-spinner *ngIf="showSpinner"></app-spinner>
+</div>

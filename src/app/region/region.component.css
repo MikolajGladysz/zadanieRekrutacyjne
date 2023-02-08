@@ -1,0 +1,21 @@
+:host {
+  min-width: 80%;
+}
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}
+.grid > button {
+  width: 150px;
+  background: none;
+  border-radius: 10px;
+  height: 150px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.grid > button:hover {
+  transform: scale(1.1);
+}

@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url("./assets/ocean.jpg");
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("./assets/font/Roboto-Regular.ttf") format("truetype");
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+:root {
+  --ocean100: #6085a6;
+  --ocean200: #215ba6;
+  --ocean300: #113059;
+  --main: #ebeff2;
+  --accent: #f2c894;
+}
+.transEl {
+  transition: all 0.3s;
+}
+.glass {
+  background: rgba(242, 200, 148, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.buttons {
+  text-transform: capitalize;
+  background: transparent;
+  margin: 10px 5px;
+  background: rgb(255 255 255 / 63%);
+  border: none;
+  border-radius: 11px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 5px 10px;
+  color: rgb(0 144 255);
+  /* box-shadow: 0 0 11px 3px black; */
+  font-size: 1.4rem;
+  margin-right: 19px;
+}

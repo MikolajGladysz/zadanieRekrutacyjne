@@ -1,0 +1,24 @@
+.con {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+.about-me-btn:hover {
+  transform: scale(1.1);
+}
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rebeccapurple;
+}
+.modal {
+  position: fixed;
+  top: 30%;
+  background: white;
+  padding: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 3;
+}

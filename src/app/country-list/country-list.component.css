@@ -1,0 +1,27 @@
+:host {
+  min-width: 80%;
+  overflow: auto;
+  max-height: 80%;
+}
+.con {
+  padding: 0 5%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+}
+li:hover {
+  scale: 1.08;
+  background: rgb(72 190 204 / 30%);
+}
+img {
+  margin-right: 15px;
+  max-width: 80px;
+}

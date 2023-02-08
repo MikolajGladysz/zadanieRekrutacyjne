@@ -1,0 +1,33 @@
+.con {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  min-height: 80px;
+}
+h1 {
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 1.3rem;
+}
+nav {
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+
+nav > button:last-child::after {
+  display: none;
+}
+nav > button::after {
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: 11px;
+  width: 17px;
+  height: 17px;
+  border-top: solid 4px white;
+  transform: rotate(45deg);
+  opacity: 63%;
+  border-right: solid 4px white;
+}

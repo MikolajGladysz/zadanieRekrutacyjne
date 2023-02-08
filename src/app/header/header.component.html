@@ -1,0 +1,14 @@
+<div class="con glass">
+  <div class="logo">logo</div>
+  <h1>{{ displayedValue }}</h1>
+</div>
+<nav class="glass">
+  <button routerLink="/" class="buttons">regions</button>
+  <button
+    class="buttons"
+    *ngFor="let link of navigationArr; let i = index"
+    (click)="navigate(i)"
+  >
+    {{ link }}
+  </button>
+</nav>

@@ -1,0 +1,13 @@
+<div class="con">
+  <app-spinner *ngIf="showSpinner"></app-spinner>
+  <ul *ngIf="!showSpinner">
+    <li
+      class="glass transEl"
+      *ngFor="let country of regionData"
+      [routerLink]="'./' + country.cca2"
+    >
+      <img [src]="country.flags.svg" alt="{{ country.name.common }}" />
+      <h3>{{ country.name.common }}</h3>
+    </li>
+  </ul>
+</div>
